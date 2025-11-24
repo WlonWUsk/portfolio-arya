@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+<header>
+  <img id="profile-pic" src="img/photography-handsome-black-american-men-happy-lifestyle_1288657-149462 21.36.28.jpg.avif" alt="Profile Picture">
+  <h1>Arya Dev Rijal</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Hi I am Arya Dev Rijal, I love music, finance, and programming. I love playing instruments.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Just replace the image links below with your own -->
+    <div class="project">
+      <h3>Mechanical Day Trading Strategy</h3>
+      <img src="img/AI-trading-vs-algo-trading-816x410.png" alt="Project Screenshot 1" class="project1">
+    </div>
+
+    <div class="project">
+      <h3>Quantitative Trading Strategy (Using EMA)</h3>
+      <img src="img/AI-trading-vs-algo-trading-816x410.png" alt="Project Screenshot 2" class="project2">
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Arya Dev</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
